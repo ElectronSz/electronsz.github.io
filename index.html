@@ -53,6 +53,7 @@
 </head>
 
 <body>
+	<div id="app">
 	<div id="colorlib-page">
 		<div class="container-wrap">
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
@@ -803,7 +804,7 @@
 										<i class="icon-globe-outline"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="#">dlaminilwaziciniso@gmail.com</a></p>
+										<p><a href="#">{{email}}</a></p>
 									</div>
 								</div>
 
@@ -813,7 +814,7 @@
 										<i class="icon-map"></i>
 									</div>
 									<div class="colorlib-text">
-										<p>Upper Forest Hills, Piggs Peak</p>
+										<p>{{address}}</p>
 									</div>
 								</div>
 
@@ -823,7 +824,7 @@
 										<i class="icon-phone"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="tel://">+268 7629 2565</a></p>
+										<p><a href="tel://">{{phone}}</a></p>
 									</div>
 								</div>
 							</div>
@@ -861,7 +862,10 @@
 			</div><!-- end:colorlib-main -->
 		</div><!-- end:container-wrap -->
 	</div><!-- end:colorlib-page -->
+</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+	<script src="js/app.js"></script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
