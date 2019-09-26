@@ -83,7 +83,7 @@ figure {
   position: fixed;
   overflow-y: scroll;
   z-index: 1001;
-  background: #f2f3f7;
+  background: #f2f3f7 !important;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -127,6 +127,7 @@ figure {
     width: 100%; }
     #colorlib-aside #colorlib-main-menu .collapse {
       display: block !important; }
+    /* background: #b3b3b3 !important;} */
     #colorlib-aside #colorlib-main-menu ul {
       text-align: center;
       margin: 0;
