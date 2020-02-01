@@ -1,2 +1,2 @@
 # electronsz.github.io
-ElectrobnSz Software
+My personal Portfolio
