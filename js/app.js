@@ -5,9 +5,9 @@ const Chat = {
 
   setup() {
     let message = ref('Hello Vue!');
-    let phone = ("+268 7629 2565");
-    let addres = ("Upper Forest Hills, Piggs Peak");
-    let email = ("dlaminilwaziciniso@gmail.com");
+    let phone = ref("+268 7629 2565");
+    let addres = ref("Upper Forest Hills, Piggs Peak");
+    let email = ref("dlaminilwaziciniso@gmail.com");
 
     return {
       message,
