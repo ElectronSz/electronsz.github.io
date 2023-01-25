@@ -1,23 +1,21 @@
-// const Foo = { template: '<div>foo</div>' }
-// const Bar = { template: '<div>bar</div>' }
+const { createApp, ref } = Vue;
 
-// const routes = [
-//   { path: '/foo', component: Foo },
-//   { path: '/bar', component: Bar }
-// ]
+const Chat = {
+  name: "Chat",
 
-// const router = new VueRouter({
-//   routes // short for `routes: routes`
-// })
+  setup() {
+    let message = ref('Hello Vue!');
+    let phone = ("+268 7629 2565");
+    let addres = ("Upper Forest Hills, Piggs Peak");
+    let email = ("dlaminilwaziciniso@gmail.com");
 
+    return {
+      message,
+      phone,
+      addres,
+      email
+    };
+  },
+};
 
-var app = new Vue({
-  el: '#app',
-  // router,
-  data: {
-    message: 'Hello Vue!',
-    phone: "+268 7629 2565",
-    address: "Upper Forest Hills, Piggs Peak",
-    email: "dlaminilwaziciniso@gmail.com"
-  }
-})
+createApp(Chat).mount("#app");
